@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kid-uJ-Zsx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="USW-HI-tGn">
+            <objects>
+                <viewController id="pOb-sh-7v8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9UC-HN-EwR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="iCw-sb-LJ7">
+                                <rect key="frame" x="113" y="402" width="188" height="92"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oee-Kz-ssx">
+                                        <rect key="frame" x="34" y="0.0" width="120" height="30"/>
+                                        <state key="normal" title="Scroll View Demo"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="BZf-9e-yN3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfU-58-eZo">
+                                        <rect key="frame" x="0.0" y="62" width="188" height="30"/>
+                                        <state key="normal" title="Page View Controller Demo"/>
+                                        <connections>
+                                            <segue destination="wVk-1t-Yia" kind="show" id="FPo-iC-pr1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="iCw-sb-LJ7" firstAttribute="centerY" secondItem="9UC-HN-EwR" secondAttribute="centerY" id="8Yd-g0-sBb"/>
+                            <constraint firstItem="iCw-sb-LJ7" firstAttribute="centerX" secondItem="9UC-HN-EwR" secondAttribute="centerX" id="uv9-3J-Ear"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZY8-LL-h6Q"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="90R-u3-29P"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ngu-fd-1Mi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1450.7246376811595" y="-549.10714285714278"/>
+        </scene>
+        <!--Scroll View Demo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Scroll View Demo" id="BYZ-38-t0r" customClass="ScrollViewDemoViewController" customModule="PagingDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RhD-NF-i2X"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1087" y="228"/>
+        </scene>
+        <!--Page View Controller Demo-->
+        <scene sceneID="xSz-tp-jfi">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" title="Page View Controller Demo" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="wVk-1t-Yia" customClass="PageViewControllerDemoViewController" customModule="PagingDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ob1-LL-eoT"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbz-sZ-oE3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1836" y="228"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8D9-wQ-sXA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kid-uJ-Zsx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ibk-nD-QD5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pOb-sh-7v8" kind="relationship" relationship="rootViewController" id="NvE-V0-yVp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r4c-79-EBy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="540.57971014492762" y="-549.10714285714278"/>
+        </scene>
+    </scenes>
+</document>
